@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj": {}
+    "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj": {}
   },
   "projects": {
-    "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj": {
+    "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj",
+        "projectUniqueName": "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj",
         "projectName": "backendblog",
-        "projectPath": "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj",
-        "packagesPath": "/Users/stevenhan/.nuget/packages/",
-        "outputPath": "/Users/stevenhan/projects/myblog/backendblog/obj/",
+        "projectPath": "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj",
+        "packagesPath": "C:\\Users\\hanst\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/stevenhan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\hanst\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -68,7 +68,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

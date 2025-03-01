@@ -19,7 +19,7 @@ const NewPostForm = ({ onPostCreated }) => {
       onPostCreated(newPost);
       setTitle('');
       setContent('');
-    } else {x
+    } else {
       console.error('Failed to create post');
     }
   };
