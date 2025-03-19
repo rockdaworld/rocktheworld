@@ -1,27 +1,35 @@
-// Controllers/PostsController.cs
 using Microsoft.AspNetCore.Mvc;
-using BlogBackend.Models;
-using System.Collections.Generic;
+using BackendBlogCRUD.Services;
+using BackendBlog.Models;
+
+namespace BackendBlog.Controllers;
+
 
 [ApiController]
 [Route("api/[controller]")]
-public class PostsController : ControllerBase
-{
-    // Temporary in-memory list for demo purposes
-    private static List<Post> posts = new List<Post>();
-
-    [HttpGet]
-    public IActionResult GetPosts()
-    {
-        return Ok(posts);
+public class PostController: Controller {
+    
+    private readonly MongoDBService _mongoDBService;
+    public PostController(MongoDBService mongoDBService) {
+        _mongoDBService = mongoDBService;
     }
-
+    [HttpGet]
+    public async Task<List<BlogPost>> Get() {
+        return await _mongoDBService.GetAsync();
+    }
     [HttpPost]
-    public IActionResult CreatePost([FromBody] Post newPost)
-    {
-        newPost.Id = posts.Count + 1;
-        newPost.CreatedAt = DateTime.UtcNow;
-        posts.Add(newPost);
-        return CreatedAtAction(nameof(GetPosts), new { id = newPost.Id }, newPost);
+    public async Task<IActionResult> Post([FromBody] BlogPost post) {
+        await _mongoDBService.CreateAsync(post);
+        return CreatedAtAction(nameof(Get), new { id = post.Id }, post);
+    }
+    [HttpPut("{id}")]
+    public async Task<IActionResult> UpdateBlog(string id, [FromBody] string body) {
+        await _mongoDBService.UpdatePost(id, body);
+        return NoContent();
+    }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(string id) {
+        await _mongoDBService.DeleteAsync(id);
+        return NoContent();
     }
 }

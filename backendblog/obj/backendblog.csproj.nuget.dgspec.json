@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj": {}
+    "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj": {
+    "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj",
+        "projectUniqueName": "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj",
         "projectName": "backendblog",
-        "projectPath": "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\backendblog.csproj",
-        "packagesPath": "C:\\Users\\hanst\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hanst\\OneDrive\\Desktop\\rocktheworld\\backendblog\\obj\\",
+        "projectPath": "/Users/stevenhan/projects/myblog/backendblog/backendblog.csproj",
+        "packagesPath": "/Users/stevenhan/.nuget/packages/",
+        "outputPath": "/Users/stevenhan/projects/myblog/backendblog/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hanst\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/stevenhan/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -47,6 +47,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.2.1, )"
             }
           },
           "imports": [
@@ -68,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
